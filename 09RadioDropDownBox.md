@@ -1,3 +1,5 @@
+
+```py
 from selenium.webdriver.support.ui import Select
 from selenium import webdriver
 import unittest,time
@@ -30,6 +32,8 @@ class SelectDropDownBoxByChrome(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
     
+```
+
 打印结果如下：
 ![打印结果](selenium/picture/end.png)
 
