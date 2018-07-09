@@ -31,7 +31,7 @@ if __name__ == '__main__':
     unittest.main()
     
 打印结果如下：
-![打印结果](./picture/end.png)
+![打印结果](selenium/picture/end.png)
 
 实例图：
 ![下拉框](./picture/dropDownBox.png)
