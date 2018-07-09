@@ -57,3 +57,6 @@ class TestDemo(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
  '''
+ 打印结果：
+ 
+![日志结果](./picture/dataDriveRreport.png)
