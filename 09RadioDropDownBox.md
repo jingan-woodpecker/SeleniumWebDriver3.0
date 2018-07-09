@@ -3,6 +3,7 @@ from selenium import webdriver
 import unittest,time
 
 class SelectDropDownBoxByChrome(unittest.TestCase):
+
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(10)
