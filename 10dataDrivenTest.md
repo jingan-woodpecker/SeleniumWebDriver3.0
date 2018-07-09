@@ -62,7 +62,7 @@ if __name__ == '__main__':
  
 ![日志结果](./picture/dataDriveRreport.png)
 
-注意：
+`注意：`
 
     （1）首先在程序顶部导入 ddt 模块;
     （2）在类TestDemo前声明 @ddt.ddt; 
