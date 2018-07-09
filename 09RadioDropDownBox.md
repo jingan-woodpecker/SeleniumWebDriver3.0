@@ -1,5 +1,4 @@
 ```py
-from selenium.webdriver.support.ui import Select
 from selenium import webdriver
 import unittest,time
 
