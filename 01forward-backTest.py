@@ -25,4 +25,6 @@ class VisitSoGouByChrome(unittest.TestCase):
         self.driver.quit()
 if __name__ == '__main__':
     unittest.main()
+    
+注意：可设置合适的等待时间，查看效果
 
