@@ -14,7 +14,6 @@ class VisitSoGouByChrome(unittest.TestCase):
         self.driver.maximize_window()
         #访问新浪首页
         self.driver.get(secondURL)
-
         #返回上一次访问过的百度首页
         self.driver.back()
         time.sleep(3)
