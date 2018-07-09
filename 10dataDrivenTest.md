@@ -61,3 +61,15 @@ if __name__ == '__main__':
  打印结果：
  
 ![日志结果](./picture/dataDriveRreport.png)
+
+注意：
+
+（1）首先在程序顶部导入 ddt 模块
+
+（2）在类TestDemo前声明 @ddt.ddt 
+
+（3）使用 @ddt.data() 添加测试数据（可添加多组数据，用逗号分隔）
+
+（4）每组测试数据中对应测试方法中定义的形参（testdata, expectdata），并且使用 @ddt.unpack 对测试数据进行解包
+
+ （5）在最后断言是否出现期望的结果数据
