@@ -12,7 +12,7 @@
 ```
 *上述代码展示的图片*
 
-![confirm弹框](./picture/confirmWindow)
+![confirm弹框](./picture/confirmWindow.png)
 
 ```py
 from selenium import webdriver
