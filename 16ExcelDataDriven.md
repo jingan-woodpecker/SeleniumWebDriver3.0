@@ -1,7 +1,7 @@
 
 **创建一个testData.xlsx的Excel表格内容如下所示**
 
-![excel表格}(./picture/testDataxlsx.png)
+![excel表格](./picture/testDataxlsx.png)
 
 **创建一个ExcelUtil.py文件用于`编写读取Excel的脚本`内容如下所示**
 
