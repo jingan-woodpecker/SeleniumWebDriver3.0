@@ -1,7 +1,7 @@
 from selenium import webdriver
 import unittest,time
 
-class PromptWindowByChrome(unittest.TestCase):
+class AssertByChrome(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(10)
