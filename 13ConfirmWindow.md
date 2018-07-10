@@ -19,12 +19,12 @@ from selenium import webdriver
 import unittest,time
 from selenium .common.exceptions import NoAlertPresentException
 
-class PromptWindowByChrome(unittest.TestCase):
+class ConfirmWindowByChrome(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(10)
 
-    def test_radioPrompt(self):
+    def test_radioConfirm(self):
         url = "D:\pycharm\API-Exercise\webDriverApi\confirm.html"
         self.driver.get(url)
         self.driver.maximize_window()
