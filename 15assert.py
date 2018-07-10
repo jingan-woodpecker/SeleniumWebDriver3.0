@@ -7,7 +7,7 @@ class AssertByChrome(unittest.TestCase):
         #隐式等待
         self.driver.implicitly_wait(10)
 
-    def test_radioPrompt(self):
+    def test_assertText(self):
         url = "http://www.baidu.com"
         self.driver.get(url)
         self.driver.maximize_window()
