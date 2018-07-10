@@ -4,6 +4,7 @@ import unittest,time
 class AssertByChrome(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
+        #隐式等待
         self.driver.implicitly_wait(10)
 
     def test_radioPrompt(self):
