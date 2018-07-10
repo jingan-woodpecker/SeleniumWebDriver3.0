@@ -21,9 +21,11 @@ logging.basicConfig(
 
 @ddt.ddt
 class TestDemo(unittest.TestCase):
+
     def setUp(self):
         self.driver = webdriver.Chrome(executable_path=r"D:\pycharm\chromedriver.exe")
         self.driver.implicitly_wait(10)
+        
     #使用@ddt.data添加测试数据
     @ddt.data(["万维网联盟", "w3cschool"],["菜鸟教程", "runoob"],["沪江网" ,"沪江网校"])
     #@ddt.unpack测试方法被调用过程中，对测试数据进行解包
@@ -51,9 +53,9 @@ class TestDemo(unittest.TestCase):
         else:
             logging.info("搜索%s ,期望 %s 通过" %(testdata, expectdata))
 
-
     def tearDown(self):
         self.driver.quit()
+
 if __name__ == '__main__':
     unittest.main()
  ```
