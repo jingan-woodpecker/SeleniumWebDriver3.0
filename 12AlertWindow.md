@@ -51,3 +51,14 @@ if __name__ == '__main__':
 示例图：
 
 ![alert弹窗](./picture/alertWindow.png)
+
+`alert弹窗 这种弹窗可用selenium自带的方法进行处理`
+
+	> 补充说明： 
+	（1）accept	 表示点击【确认】按钮 
+	（2）dismiss 	  表示点击【取消】按钮 
+	（3）send_keys()  表示【输入内容】 
+	（4）text		表示获取弹出框的【文本】
+	（5）先导入alert类【from selenium.webdriver.common.alert】并有上述属性
+
+	
