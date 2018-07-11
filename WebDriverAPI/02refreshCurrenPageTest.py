@@ -14,6 +14,7 @@ class refreshPageByChrome(unittest.TestCase):
         #刷新当前页面
         self.driver.refresh()
         time.sleep(3)
+        
     def tearDown(self):
         self.driver.quit()
         
