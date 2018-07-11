@@ -26,5 +26,5 @@ class VisitSoGouByChrome(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
     
-注意：可设置合适的等待时间，查看效果
+#注意：可设置合适的等待时间，查看效果
 
