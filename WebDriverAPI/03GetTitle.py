@@ -16,6 +16,7 @@ class GetTitleByChrome(unittest.TestCase):
         self.assertEqual(title, "百度一下，你就知道", "页面title属性值不正确")
 
     def tearDown(self):
+		#退出浏览器
         self.driver.quit()
 
 if __name__ == '__main__':
