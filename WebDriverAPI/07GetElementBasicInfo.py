@@ -14,6 +14,7 @@ class GetInfoByChrome(unittest.TestCase):
         self.driver.maximize_window()
         #查找“地图”链接文本
         getElementInfo = self.driver.find_element_by_link_text("地图")
+        #打印元素的大小标签名
         print("元素的size:", getElementInfo.size)
         print("元素的标签名:",getElementInfo.tag_name)
 
