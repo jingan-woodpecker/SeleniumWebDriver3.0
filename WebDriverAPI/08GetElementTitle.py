@@ -4,6 +4,7 @@ import unittest,time
 class GetElementTitleByChrome(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
+        #隐式等待
         self.driver.implicitly_wait(10)
 
     def test_getElementTitle(self):
@@ -18,5 +19,6 @@ class GetElementTitleByChrome(unittest.TestCase):
     def tearDown(self):
         #退出浏览器
         self.driver.quit()
+        
 if __name__ == '__main__':
     unittest.main()
