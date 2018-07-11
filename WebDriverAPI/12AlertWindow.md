@@ -3,12 +3,12 @@ from selenium import webdriver
 import unittest,time
 from selenium .common.exceptions import NoAlertPresentException
 
-class PageScrollByChrome(unittest.TestCase):
+class PageAlertWindowByChrome(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(10)
 
-    def test_radioScroll(self):
+    def test_alertWindow(self):
         url = "https://www.myofferdemo.com/"
         self.driver.get(url)
         self.driver.maximize_window()
