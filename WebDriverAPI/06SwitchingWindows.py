@@ -39,6 +39,7 @@ class SwitchingWindowByChrome(unittest.TestCase):
                 assert "地图" in self.driver.page_source, "不存在该关键字"
 
     def tearDown(self):
+		#退出浏览器
         self.driver.quit()
 
 if __name__ == '__main__':
