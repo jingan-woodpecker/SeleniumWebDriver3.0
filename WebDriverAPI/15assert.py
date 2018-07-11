@@ -10,6 +10,7 @@ class AssertByChrome(unittest.TestCase):
     def test_assertText(self):
         url = "http://www.baidu.com"
         self.driver.get(url)
+        #最大化窗口
         self.driver.maximize_window()
         self.driver.find_element_by_id("kw").send_keys("菜鸟教程")
         self.driver.find_element_by_id("su").click()
