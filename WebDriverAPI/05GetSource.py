@@ -24,4 +24,4 @@ class GetSourceByChrome(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
     
-    注意：断言关键字使用asserTrue()方法
+   # 注意：断言关键字使用asserTrue()方法
