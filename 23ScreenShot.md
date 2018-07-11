@@ -31,7 +31,9 @@ if __name__ == '__main__':
 	截图效果如下：
 ![截图](./picture/screenPicture.png)
 
+
 *注意*
+
 	截图成功后会返回**True**，如果发生了IOError异常，会返回False;
 	函数中传递的图片的路径可以是相对路径也可以是绝对路径
 	
