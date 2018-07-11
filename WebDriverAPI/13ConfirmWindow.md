@@ -46,6 +46,7 @@ class ConfirmWindowByChrome(unittest.TestCase):
         print('e')
 
     def tearDown(self):
+		#退出浏览器
         self.driver.quit()
 
 if __name__ == '__main__':
