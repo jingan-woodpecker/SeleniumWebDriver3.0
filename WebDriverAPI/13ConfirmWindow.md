@@ -28,6 +28,7 @@ class ConfirmWindowByChrome(unittest.TestCase):
         url = "D:\pycharm\API-Exercise\webDriverApi\confirm.html"
         self.driver.get(url)
         self.driver.maximize_window()
+        
         #定位并点击按钮，使其显示confirm弹窗
         button = self.driver.find_element_by_id("button")
         button.click()
