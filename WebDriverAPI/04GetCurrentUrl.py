@@ -22,4 +22,4 @@ class GetCurrentPageUrlByChrome(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
     
-  注意：url 地址一定要填写完整，不然容易导致测试失败
+  #注意：url 地址一定要填写完整，不然容易导致测试失败
