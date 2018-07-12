@@ -40,7 +40,7 @@ class ElementsExistByChrome(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-    ```
+ ```
 	注意：self.driver.find_elements_by_css_selector(css_selector=css)其中的element加上`s`
 	
 	测试结果如下：
