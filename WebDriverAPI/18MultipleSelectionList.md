@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>操作prompt弹窗</title>
+    <title>操作多选的选择列表</title>
 </head>
 <body>
 <select name="area" size=6 multiple="multiple">
