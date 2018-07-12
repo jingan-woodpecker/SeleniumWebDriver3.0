@@ -14,6 +14,7 @@ class AssertSelectByChrome(unittest.TestCase):
     def test_checkSelectText(self):
         url = "http://www.baidu.com"
         self.driver.get(url)
+        #最大化窗口
         self.driver.maximize_window()
         # 点击设置文本
         self.driver.find_element_by_link_text("设置").click()
