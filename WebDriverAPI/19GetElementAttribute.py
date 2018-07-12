@@ -1,6 +1,6 @@
 from selenium.webdriver.support.ui import Select
 from selenium import webdriver
-import unittest, time
+import unittest
 
 class GetAttributeByChrome(unittest.TestCase):
 
