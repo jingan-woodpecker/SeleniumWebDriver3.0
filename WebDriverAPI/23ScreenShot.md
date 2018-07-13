@@ -29,7 +29,7 @@ if __name__ == '__main__':
  ```
  
 	截图效果如下：
-![截图效果](./picture/screenPicture.png)
+![截图效果](../picture/screenPicture.png)
 
 
 *注意*
