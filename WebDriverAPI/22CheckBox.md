@@ -15,7 +15,7 @@
 </html>
 ```
 
-![复选框](./picture/checkBox.png)
+![复选框](../picture/checkBox.png)
 
 ```py
 from selenium import webdriver
