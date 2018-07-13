@@ -14,7 +14,7 @@ class OperateAjaxByChrome(unittest.TestCase):
         url = "http://www.sogou.com/"
         self.driver.get(url)
         self.driver.maximize_window()
-        #找到搜索输入框并点击，如果有历史记录就先清除
+        #找到搜索输入框并点击，如果有历史记录就先清除.clear()
         searchInputBox = self.driver.find_element_by_id("query")
         searchInputBox.click()
         #添加等待时间，让悬浮框加载完成
