@@ -26,7 +26,7 @@
 </html>
 ```
 
-![下拉列表图](./picture/operateMultipleOptionDropList.png)
+![下拉列表图](../picture/operateMultipleOptionDropList.png)
 
 ```py
 from selenium.webdriver.common.keys import Keys
