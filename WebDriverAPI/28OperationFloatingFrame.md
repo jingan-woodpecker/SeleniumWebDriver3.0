@@ -35,7 +35,7 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
-![悬浮框](../picture/operateAjax.png)
+![浮动框](../picture/ajaxWindow.png)
 
 	*方法二*
 	因为浮动框的内容随时变化，如果想固定选择浮动框中的某一项，则可使用以下方法
