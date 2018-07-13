@@ -14,7 +14,7 @@ class OperateAjaxByChrome(unittest.TestCase):
         url = "http://www.sogou.com/"
         self.driver.get(url)
         self.driver.maximize_window()
-        #找到搜索输入框并点击，如果有历史记录就先清除.clear()
+        #找到搜索输入框并点击，如果有历史记录就先清除
         searchInputBox = self.driver.find_element_by_id("query")
         searchInputBox.click()
         #添加等待时间，让悬浮框加载完成
@@ -35,7 +35,7 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
-![悬浮框](./picture/OperateAjax.png)
+![悬浮框](./picture/operateAjax.png)
 
 	*方法二*
 	因为浮动框的内容随时变化，如果想固定选择浮动框中的某一项，则可使用以下方法
