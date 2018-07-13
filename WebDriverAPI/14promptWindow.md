@@ -12,7 +12,7 @@
 ```
 `html代码结果`
 
-![prompt弹窗](./picture/promptWindow.png)
+![prompt弹窗](../picture/promptWindow.png)
 
 ```py
 from selenium import webdriver
