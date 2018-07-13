@@ -14,7 +14,7 @@
 </body>
 </html>
 ```
-![单选框](./picture/Radio.png)
+![单选框](../picture/Radio.png)
 
 ```py
 from selenium import webdriver
