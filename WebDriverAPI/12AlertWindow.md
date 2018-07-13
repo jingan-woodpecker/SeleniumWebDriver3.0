@@ -50,7 +50,7 @@ if __name__ == '__main__':
 ```
 示例图：
 
-![alert弹窗](./picture/alertWindow.png)
+![alert弹窗](../picture/alertWindow.png)
 
 `alert弹窗 这种弹窗可用selenium自带的方法进行处理`
 
