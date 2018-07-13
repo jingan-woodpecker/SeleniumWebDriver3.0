@@ -37,6 +37,7 @@ class DownloadByChrome(unittest.TestCase):
         profile.set_preference("browser.download.manager.closeWhenDone", False)
         #启动火狐浏览器时，通过firefox_profile参数将自动配置添加到FirefoxProfile对象中
         self.driver = webdriver.Firefox(executable_path=r"D:\pycharm\geckodriver.exe", firefox_profile = profile)
+        
     def test_dataPicker(self):
         url = "https://github.com/mozilla/geckodriver/releases"
         self.driver.get(url)
