@@ -68,7 +68,7 @@ if __name__ == '__main__':
 ```
 	选择多选下拉框内容的方法：
 	
-![多选框](./picture/multipleselect.png)
+![多选框](../picture/multipleselect.png)
 
 	删除多选下拉框内容的方式：
 	deselect_by_index()通过序号删除；
