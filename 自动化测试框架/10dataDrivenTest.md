@@ -62,7 +62,7 @@ if __name__ == '__main__':
  
  *打印结果：*
  
-![日志结果](./picture/dataDriveRreport.png)
+![日志结果](../picture/dataDriveRreport.png)
 
 `注意：`
 
