@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0cdea9a-c5a8-4c9d-aa99-925773dc148a" name="Default" comment="" />
+    <list default="true" id="4e85e466-a8aa-4426-9b5f-5547714faa70" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/自动化测试框架/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/自动化测试框架/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,11 +13,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="10dataDrivenTest.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/10dataDrivenTest.md">
+      <file leaf-file-name="12AlertWindow.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebDriverAPI/12AlertWindow.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="432">
+                <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adb常用命令一.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ADB命令/adb常用命令一.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="513">
+                <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
@@ -24,22 +40,14 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/10dataDrivenTest.md" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="403" />
     <option name="y" value="84" />
     <option name="width" value="1400" />
     <option name="height" value="959" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -50,8 +58,13 @@
         <subPane>
           <expand>
             <path>
-              <item name="自动化测试框架" type="b2602c69:ProjectViewProjectNode" />
-              <item name="自动化测试框架" type="462c0819:PsiDirectoryNode" />
+              <item name="selenium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="selenium" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="selenium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="selenium" type="462c0819:PsiDirectoryNode" />
+              <item name="ADB命令" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -60,8 +73,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../adb命令" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -80,19 +92,19 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a0cdea9a-c5a8-4c9d-aa99-925773dc148a" name="Default" comment="" />
-      <created>1531898004852</created>
+      <changelist id="4e85e466-a8aa-4426-9b5f-5547714faa70" name="Default" comment="" />
+      <created>1531905845462</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1531898004852</updated>
+      <updated>1531905845462</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="403" y="84" width="1400" height="959" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18355359" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17544784" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -115,10 +127,22 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/10dataDrivenTest.md">
+    <entry file="file://$PROJECT_DIR$/WebDriverAPI/12AlertWindow.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor relative-caret-position="432">
+            <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ADB命令/adb常用命令一.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="513">
+            <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
