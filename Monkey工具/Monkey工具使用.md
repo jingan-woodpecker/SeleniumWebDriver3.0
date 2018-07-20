@@ -1,6 +1,6 @@
-    了解：Monkey（猴子测试）是Android系统自带的一个命令行工具，可在模拟器或真实设备中
-    运行，Monkey可向被测试应用程序发送伪随机的用户事件流（按键、触屏等），主要是用来测
-    试软件的稳定性和健壮性。
+>了解：Monkey（猴子测试）是Android系统自带的一个命令行工具，可在模拟器或真实设备中
+运行，Monkey可向被测试应用程序发送**伪随机的用户事件流**（按键、触屏等），主要是用来测
+试软件的**稳定性和健壮性**。
     
 ```sh
 C:\Users\myoffer>adb shell monkey
@@ -34,15 +34,15 @@ usage: monkey [-p ALLOWED_PACKAGE [-p ALLOWED_PACKAGE] ...]
               [--permission-target-system]
               COUNT
 ```
+>上面的"-p"参数指定要运行哪个包，在运行一个包（日历）之前，需要先获取权限并找到对应的包名。
 
-    上面的"-p"参数指定要运行哪个包，在运行一个包（日历）之前，需要先获取权限并找到对应的包名
     步骤如下：
-        1、adb shell 回车；
-        2、su root 回车；
-        3、cd data 回车；
-        4、cd data 回车；
-        5、ls 回车；
-        6、找到包名（com.android.calendar）；
+    1、adb shell 回车；
+    2、su root 回车；
+    3、cd data 回车；
+    4、cd data 回车；
+    5、ls 回车；
+    6、找到包名（com.android.calendar）；
        
         
 ```sh
@@ -67,9 +67,7 @@ huawei.android.widget
 org.simalliance.openmobileapi.service
 ```
 
-    重新输入"adb shell monkey -p com.android.calendar 400"（发送400次随机事件）
-    成功后可看到：网络统计耗时1850ms,耗费在手机上0ms,耗费在无线网络上0ms,浪费在没连接1850ms
-    
+>重新输入"adb shell monkey -p com.android.calendar 400"（发送400次随机事件）成功可看到：网络统计耗时1850ms,耗费在手机上0ms,耗费在无线网络上0ms,浪费在没连接1850ms  
  ```sh
  C:\Users\myoffer>adb shell monkey -p com.android.calendar 400
   bash arg: -p
@@ -88,7 +86,7 @@ Events injected: 400
         1、adb shell monkey -p com.android.calendar -v 400
         2、adb shell monkey -p com.android.calendar -v-v 400
         3、adb shell monkey -p com.android.calendar -v-v-v 400
-    示例如下：
+>示例如下：
     
 ```sh
 C:\Users\myoffer>adb shell monkey -p com.android.calendar -v 50
