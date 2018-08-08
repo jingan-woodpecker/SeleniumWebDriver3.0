@@ -10,9 +10,9 @@ Postman使用
     1、本地的应用程序(https://www.getpostman.com/apps)
     2、Chrome浏览器的插件(有限制，不建议使用)
     
-![postman](../picture/post.png)
+![postman1](../picture/post.png)
 
-![postman](../picture/post01.png)
+![postman2](../picture/post01.png)
 
 **构建HTTP请求**
 
@@ -25,6 +25,34 @@ Postman使用
             1、application/x-www-form-urlencoded
             2、application/json(序列化)
             3、application/xml
-            4、multipart/form-data
+            4、multipart/form-pdata
             5、其它
-    
+            
+ 特殊符号需要当做参数而不是分隔符的作用时，可在下图的表格中填入并且自动转义
+            
+![postman3](../picture/post03.png)
+
+使用POST方法时，因为较大，所以参数一般放在消息体中
+
+    构建消息体：
+        1、首先选择POST或其它请求方法；
+        2、查看消息体格式(Content-Type)；
+        3、然后在Postman工具的body中选中消息体格式
+        4、最后填入键值对的参数与值
+        
+![postman4](../picture/post04.png)
+
+![postman5](../picture/post05.png)
+
+json描述数据结构，用字符串的方式表示，创建json格式的消息体如下
+
+![postman6](../picture/post06.png)
+
+    若是别人要使用自己的接口测试用例，可使用import导出文件到本地，然后别人再用import导入即可
+    若是创建了账户则会自动保存内容
+![postman7](../picture/post07.png)
+
+    总结：接口测试流程
+        *阅读API接口文档
+        *编写测试用例
+        *根据测试用例进行API的手工测试
