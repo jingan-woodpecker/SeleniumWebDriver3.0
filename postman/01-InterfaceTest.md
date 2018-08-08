@@ -90,5 +90,70 @@
         
     总结：没有直接暴露到外部就不需要做接口测试（暴露给外部，一个系统调用另一个系统接口，给第三方使用的就需要进行接口测试）   
 
+HTTP(Hypertext Transfer Protocol)超文本传输协议---------目前使用最广泛的是HTTP/1.1版本
+
+    HTTP请求包含内容 
+        请求行 GET/index.html HTTP/1.1
+        请求头 Host:www.example.com
+              
+              POST/HTTP/1.1
+              Host: foo.com
+              Content-Type: application/x-www-form-urlencoded
+              Content-Length: 13
+        空行      
+              say-HI&TO=Mom
+        
+        
+        消息体:不是所有的请求都有消息体的(PUT/POST都有)，一般GET请求是没有的，如果有消息体，与前面的内容一定存在空白行隔开请求头
+        请求行和请求头在每个请求中都存在
+        
+    HTTP请求方法(CRUD-----POST、GET、PUT、DELETE)
+    
+        *GET    请求获取Request-URI所标识的资源(用于获取资源)
+        *POST   在Request-URI所标识的资源后附加的新的数据(用于新建资源)
+        *HEAD   请求获取由Request-URI所标识的资源的响应消息报头(用于检查资源)
+        *PUT    请求服务器存储一个资源，并用Request-URI作为标识(更新资源)
+        *DELETE 请求服务器删除Request-URI所标识的资源(用于删除资源)
+        
+    HTTP响应包含内容
+        状态行  HTTP/1.1 200 0K
+        响应头  Date: Mon, 23 May 2005 22:38:34 GMT
+               Content-Type: text/html; charset=UTF-8
+               Content-Encoding: UTF-8
+               Content-Length: 138
+               Last-Modified: Wed, 08 Jan 2003 23:11:55 GMT
+               Server: Apache/1.3.3.7 (Unix) (Red-Hat/Linux)
+               ETag: "3f80f-1b6-3e1cb03b"
+               Accept-Ranges: bytes
+               Connection: close
+        空行
+        消息体 <!DOCTYPE html>
+              <html lang="en">
+              <head>
+	            <meta charset="UTF-8">
+	            <title>An Example Page</title>
+	            <style type="text/css">
+	            </style>
+              </head>
+              <body>
+	               This is a very simple HTML document.
+              </body>
+              </html>
+              
+    HTTP状态码
+        2**  成功
+        3**  重定向
+            301：被请求的资源已永久移动到新位置
+            302：要求客户端执行临时重定向（原始描述短语为“Moved Temporarily”）
+            307：在这种情况下，请求应该与另一个URI重复，但后续的请求应仍使用原始的URI。 与302相反
+        4**  客户端错误
+            401：类似于403 Forbidden，401语义即“未认证”，即用户没有必要的凭据
+            403：服务器已经理解请求，但是拒绝执行它。(没有权限)
+            404：请求失败，请求所希望得到的资源未被在服务器上发现，但允许用户的后续请求   
+        5**  服务器错误
+            500：通用错误消息，服务器遇到了一个未曾预料的状况，导致了它无法完成对请求的处理。没有给出具体错误信息
+            503：由于临时的服务器维护或者过载，服务器当前无法处理请求。这个状况是暂时的，并且将在一段时间以后恢复。
+            
+        
    
       
