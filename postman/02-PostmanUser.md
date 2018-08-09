@@ -52,6 +52,15 @@ json描述数据结构，用字符串的方式表示，创建json格式的消息
     若是创建了账户则会自动保存内容
 ![postman7](../picture/post07.png)
 
+
+导出接口文档分享的步骤：
+    
+    View in web---->生成的网页中点击Published------>在下拉框中选择Copy Public Link---->在新窗口打开链接即可
+    
+![postman8](../picture/post08.png)
+
+![postman8](../picture/post09.png)
+
     总结：接口测试流程
         *阅读API接口文档
         *编写测试用例
