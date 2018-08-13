@@ -22,4 +22,4 @@ class GetTitleByChrome(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
     
-    注意：断言的时候最好选择复制文本的方法，防止出错
+    # 注意：断言的时候最好选择复制文本的方法，防止出错
