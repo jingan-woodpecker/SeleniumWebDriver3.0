@@ -30,6 +30,7 @@ def deleteAllCourse():
 
     driver.get("http://localhost/mgr/login/login.html")
     driver.maximize_window()
+    
     driver.find_element_by_id("username").send_keys("auto")
     driver.find_element_by_id("password").send_keys("sdfsdfsdf")
 
