@@ -116,5 +116,47 @@ test_three
             Test setup/teardown(不常用)
             如果suite内的用例、或者子套件本身没有setup/teardown,才执行(缺省初始化清除)
        
+需要在"__init__.robot"文件中先添加以下内容
+```robotframework
+*** Settings ***
+Suite Setup            log to console     \n---suite big setup---
+Suite Teardown         log to console     \n---suite big teardown---
 
+Test Setup             log to console     \n---test big default setup---
+Test Teardown          log to console     \n---test big default teardown---
+```
+st1.robot文件内容如下
+```robotframework
+*** Settings ***
+Suite Setup            log to console     \n---suite st setup---
+Suite Teardown         log to console     \n---suite st teardown---
+
+Test Setup             log to console     \n---test st setup---
+Test Teardown          log to console     \n---test st teardown---
+*** Test Cases ***
+test_one
+    [Setup]      log to console      \n --- case 测试1 setup ---
+    log to console 测试用例主体部分1
+    [Teardown]   log to console      \n --- case 测试1 teardown ---
+
+test_two
+    log to console 测试用例主体部分2
+```
+
+st2.robot文件内容如下
+```robotframework
+*** Settings ***
+
+*** Test Cases ***
+test_three
+    [Setup]      log to console      \n --- case 测试3 setup ---
+    log to console 测试用例主体部分3
+    [Teardown]   log to console      \n --- case 测试3 teardown ---
+
+```
+    目录如下
+    >suite
+        >__init__.robot
+        >st1.robot
+        >st2.robot
       
