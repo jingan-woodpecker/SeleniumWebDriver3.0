@@ -1,26 +1,28 @@
 Testcase:
 
-    ´´½¨Ò»¸öRF²âÊÔÌ×¼ş£¬°üº¬ÏÂÃæµÄÒ»¸öÓÃÀı
-    ÓÃÀıÃû£º
-    ÑéÖ¤µ±ÏµÍ³ÖĞÃ»ÓĞ¿Î³ÌµÄÊ±ºò£¬ÊÇ·ñÄÜ³É¹¦Ìí¼ÓÒ»¸ö¿Î³Ì
+    åˆ›å»ºä¸€ä¸ªRFæµ‹è¯•å¥—ä»¶ï¼ŒåŒ…å«ä¸‹é¢çš„ä¸€ä¸ªç”¨ä¾‹
+    ç”¨ä¾‹åï¼š
+    éªŒè¯å½“ç³»ç»Ÿä¸­æ²¡æœ‰è¯¾ç¨‹çš„æ—¶å€™ï¼Œæ˜¯å¦èƒ½æˆåŠŸæ·»åŠ ä¸€ä¸ªè¯¾ç¨‹
     
-    Ç°ÖÃÌõ¼ş£º
-    ÏµÍ³ÖĞÃ»ÓĞ¿Î³Ì
+    å‰ç½®æ¡ä»¶ï¼š
+    ç³»ç»Ÿä¸­æ²¡æœ‰è¯¾ç¨‹
     
-    ²âÊÔ²½Öè£º
-    Ìí¼Ó¿Î³Ì£¬ÊäÈë¿Î³ÌÃû¡¢ÏêÇéÃèÊö¡¢Õ¹Ê¾´ÎĞò£¬µã»÷´´½¨
+    æµ‹è¯•æ­¥éª¤ï¼š
+    æ·»åŠ è¯¾ç¨‹ï¼Œè¾“å…¥è¯¾ç¨‹åã€è¯¦æƒ…æè¿°ã€å±•ç¤ºæ¬¡åºï¼Œç‚¹å‡»åˆ›å»º
     
-    Ô¤ÆÚ½á¹û£º
-    ´´½¨µÄ¿Î³ÌÕıÈ·ÏÔÊ¾ÔÚÏÂÃæµÄ¿Î³ÌÁĞ±íÖĞ¡£
-    ÕâÀïÎªÁË¼ò»¯£¬ÎÒÃÇÖ»¼ì²é ¿Î³ÌÃû¾Í¿ÉÒÔÁË
+    é¢„æœŸç»“æœï¼š
+    åˆ›å»ºçš„è¯¾ç¨‹æ­£ç¡®æ˜¾ç¤ºåœ¨ä¸‹é¢çš„è¯¾ç¨‹åˆ—è¡¨ä¸­ã€‚
+    è¿™é‡Œä¸ºäº†ç®€åŒ–ï¼Œæˆ‘ä»¬åªæ£€æŸ¥ è¯¾ç¨‹åå°±å¯ä»¥äº†
     
     
-    ×¢Òâ£º
-    Õâ¸öÓÃÀıµÄ³õÊ¼»¯ºÍÇå³ı²Ù×÷£¬¶¼ÊÇĞèÒªÉèÖÃÎªÎŞ¿Î³Ì×´Ì¬¡£
-    ĞèÒªÎÒÃÇ¿ª·¢Ò»¸öpython²âÊÔ¿â£¬Ê¹ÓÃselenium¿â¿ª·¢¹Ø¼ü×Öº¯ÊıdeleteAllCourse£¬ ÊµÏÖÊ¹ÓÃPython×Ô¶¯µã»÷É¾³ı¿Î³Ì°´Å¥
-
-st.pythonÎÄ¼ş
+    æ³¨æ„ï¼š
+    è¿™ä¸ªç”¨ä¾‹çš„åˆå§‹åŒ–å’Œæ¸…é™¤æ“ä½œï¼Œéƒ½æ˜¯éœ€è¦è®¾ç½®ä¸ºæ— è¯¾ç¨‹çŠ¶æ€ã€‚
+    éœ€è¦æˆ‘ä»¬å¼€å‘ä¸€ä¸ªpythonæµ‹è¯•åº“ï¼Œä½¿ç”¨seleniumåº“å¼€å‘å…³é”®å­—å‡½æ•°deleteAllCourseï¼Œ å®ç°ä½¿ç”¨Pythonè‡ªåŠ¨ç‚¹å‡»åˆ é™¤è¯¾ç¨‹æŒ‰é’®
+    
+  
+st.pythonæ–‡ä»¶
 ```python
+
 from selenium import webdriver
 import time
 
@@ -44,7 +46,7 @@ def deleteAllCourse():
 
     driver.implicitly_wait(1)
     while True:
-        # element²»Ìí¼Ó"s"»á±¨'WebElement' object does not support indexing ÎÊÌâ
+        # elementä¸æ·»åŠ "s"ä¼šæŠ¥'WebElement' object does not support indexing é—®é¢˜
         deleteButtons = driver.find_elements_by_css_selector('button[ng-click="delOne(one)"]')
         if deleteButtons:
             deleteButtons[0].click()
@@ -56,7 +58,7 @@ def deleteAllCourse():
     driver.quit()
 ```
 
-t1.robotÎÄ¼ş
+t1.robotæ–‡ä»¶
 ```robotframework
 *** Settings ***
 Library    SeleniumLibrary
@@ -65,7 +67,7 @@ Library    Collections
 
 *** Test Cases ***
 test_one
-#    ³õÊ¼»¯Ö»¿ÉÒÔÊ¹ÓÃÒ»¸ö¹Ø¼ü×Ö
+#    åˆå§‹åŒ–åªå¯ä»¥ä½¿ç”¨ä¸€ä¸ªå…³é”®å­—
     [Setup]        deleteAllCourse
     Open Browser   http://localhost/mgr/login/login.html    chrome
     Set Selenium Implicit Wait   5
@@ -76,28 +78,26 @@ test_one
     click element   tag=button
     click element   css=button[ng-click="showAddOne=true"]
     input text     css=input[ng-model="addData.name"]          selenium
-    input text     css=textarea[ng-model="addData.desc"]       selenium¿Î³ÌÃèÊö
+    input text     css=textarea[ng-model="addData.desc"]       seleniumè¯¾ç¨‹æè¿°
     input text     css=input[ng-model="addData.display_idx"]   3
     click element  css=button[ng-click="addOne()"]
 
-#    ·ÀÖ¹¶ş´ÎäÖÈ¾Ìí¼ÓµÈ´ıÊ±¼ä
+#    é˜²æ­¢äºŒæ¬¡æ¸²æŸ“æ·»åŠ ç­‰å¾…æ—¶é—´
     sleep   1
 
     ${eles}=      Get WebElements      css=tr>td:nth-child(2)
 
-#    ´´½¨ÁĞ±í
+#    åˆ›å»ºåˆ—è¡¨
     ${lessons}=   create list
 
-#    forÑ­»·ÁĞ±íÊ¹ÓÃ@
+#    forå¾ªç¯åˆ—è¡¨ä½¿ç”¨@
     :For      ${ele}    IN       @{eles}
     \         log to console     ${ele.text}
 
-#    ÅĞ¶ÏÊÇ·ñÖ»´æÔÚselenium¿Î³Ì
+#    åˆ¤æ–­æ˜¯å¦åªå­˜åœ¨seleniumè¯¾ç¨‹
     should be true     $lessons==['selenium']
 
     close browser
 
     [Teardown]    deleteAllCourse
-
-
 ```

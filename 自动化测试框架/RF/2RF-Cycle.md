@@ -1,11 +1,12 @@
-1¡¢Ñ­»·
+1ã€å¾ªç¯
 
-    *RFÓÃFORÀ´ÊµÏÖÑ­»·
-        > ±éÀúList±äÁ¿
-        > IN RANGEµÄÓÃ·¨ 
-
+    *RFç”¨FORæ¥å®ç°å¾ªç¯
+        > éå†Listå˜é‡
+        > IN RANGEçš„ç”¨æ³• 
+        
 ```python
-# mylibÎÄ¼ş
+   
+# mylibæ–‡ä»¶
 def returnlist():
     return [1,2,3]
     
@@ -14,35 +15,37 @@ def returndict():
         'ele1':'male',
         'ele2':'female'
     }
+``` 
 
-```        
 ```robotframework
+
 *** Settings ***
 Library    mylib
 
 *** Test Cases ***
 
 Example 1
-    :FOR    ${animal}  IN   Ã¨   ¹·   Öí
+    :FOR    ${animal}  IN   çŒ«   ç‹—   çŒª
     \       Log To Console    ${animal}
-    \       Log To Console    µÚ¶şĞĞ
-    Log To Console   Ñ­»·ÍâÃæ
+    \       Log To Console    ç¬¬äºŒè¡Œ
+    Log To Console   å¾ªç¯å¤–é¢
     
 
-±éÀúlistÁĞ±í
+éå†liståˆ—è¡¨
     ${list}=    returnlist
-#    È¡³öÔªËØĞèÒªÊ¹ÓÃ@·ûºÅ
+#    å–å‡ºå…ƒç´ éœ€è¦ä½¿ç”¨@ç¬¦å·
     :FOR    ${index}   IN    @{list}
     \       Log To Console   ${index}
     
-rangeµÄÓÃ·¨
+rangeçš„ç”¨æ³•
     [Documentation]    Loops over values from 0 to 9
     :FOR    ${index}    IN RANGE   10
     \       Log To Console   ${index} 
-
 ```
 
-forÑ­»·ÊµÀı£º¼ì²é¹ÜÀíÏµÍ³µÄ¿Î³ÌÖĞ´æÔÚ"java"¡¢"python"Á½ÃÅ¿Î³Ì£¨ÓÃpythonÓïÑÔºÍRFÓïÑÔ·Ö±ğÊµÏÖ£©
+
+forå¾ªç¯å®ä¾‹ï¼šæ£€æŸ¥ç®¡ç†ç³»ç»Ÿçš„è¯¾ç¨‹ä¸­å­˜åœ¨"java"ã€"python"ä¸¤é—¨è¯¾ç¨‹ï¼ˆç”¨pythonè¯­è¨€å’ŒRFè¯­è¨€åˆ†åˆ«å®ç°ï¼‰
+
 ```python
 # coding:utf8
 from selenium import webdriver
@@ -74,13 +77,14 @@ driver.quit()
 ```
 
 ```robotframework
+
 *** Settings ***
 Library           Selenium2Library
 Library           Collections
 
 *** Test Cases ***
-¼ì²é¿Î³Ì
-    [Documentation]    ¼ì²é¿Î³ÌÊÇ·ñ°üº¬java¡¢python
+æ£€æŸ¥è¯¾ç¨‹
+    [Documentation]    æ£€æŸ¥è¯¾ç¨‹æ˜¯å¦åŒ…å«javaã€python
 
     Open Browser   http://ci.ytesting.com/mgr/login/login.html    chrome
     Set Selenium Implicit Wait   10
@@ -104,5 +108,4 @@ Library           Collections
 
     Lists Should Be Equal   ${lessons}    ${expected}
     Should Be True    $lessons==$ecpected
-
 ```

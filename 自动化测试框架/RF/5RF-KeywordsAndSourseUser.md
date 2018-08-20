@@ -1,4 +1,4 @@
-st.pyÎÄ¼ş
+st.pyæ–‡ä»¶
 ```python
 from selenium import webdriver
 import time
@@ -22,7 +22,7 @@ def deleteAllCourse():
 
     driver.implicitly_wait(1)
     while True:
-        # element²»Ìí¼Ó"s"»á±¨'WebElement' object does not support indexing ÎÊÌâ
+        # elementä¸æ·»åŠ "s"ä¼šæŠ¥'WebElement' object does not support indexing é—®é¢˜
         deleteButtons = driver.find_elements_by_css_selector('button[ng-click="delOne(one)"]')
         if deleteButtons:
             deleteButtons[0].click()
@@ -33,15 +33,15 @@ def deleteAllCourse():
     driver.implicitly_wait(10)
     driver.quit()
 ```
-ÓÃ»§¹Ø¼ü×Ö
 
-    Í¨³£µÄ´Ó²âÊÔ¿â(pythonÎÄ¼ş)ÀïÃæÌá¹©µÄ¹Ø¼ü×Ö½Ğ£º¿â¹Ø¼ü×Ö
+ç”¨æˆ·å…³é”®å­—
+
+    é€šå¸¸çš„ä»æµ‹è¯•åº“(pythonæ–‡ä»¶)é‡Œé¢æä¾›çš„å…³é”®å­—å«ï¼šåº“å…³é”®å­—
     
-    ÔÚRFÎÄ¼şÖĞÊµÏÖ¹Ø¼ü×Ö£¬ÕâÖÖ¹Ø¼ü×ÖÎÒÃÇ³ÆÖ®ÎªÓÃ»§¹Ø¼ü×Ö
-        1¡¢ÓÃ»§¹Ø¼ü×ÖÀàËÆÓÚRF²ãÃæµÄº¯Êı£¬°Ñ¶à¸ö¹Ø¼ü×Ö²Ù×÷×é³ÉÒ»¸ö"ºê"£¬¹Ø¼ü×Ö
-        2¡¢¶¨ÒåºÃÓÃ»§¹Ø¼ü×Öºó£¬¸Ã²âÊÔÌ×¼şÀïÃæ¾Í¿ÉÒÔÊ¹ÓÃ¸ÃÓÃ»§¹Ø¼ü×ÖÁË£¬¾ÍÏñÊ¹ÓÃ¿â¹Ø¼ü×ÖÒ»Ñù
-t2.robotÎÄ¼ş
-
+    åœ¨RFæ–‡ä»¶ä¸­å®ç°å…³é”®å­—ï¼Œè¿™ç§å…³é”®å­—æˆ‘ä»¬ç§°ä¹‹ä¸ºç”¨æˆ·å…³é”®å­—
+        1ã€ç”¨æˆ·å…³é”®å­—ç±»ä¼¼äºRFå±‚é¢çš„å‡½æ•°ï¼ŒæŠŠå¤šä¸ªå…³é”®å­—æ“ä½œç»„æˆä¸€ä¸ª"å®"ï¼Œå…³é”®å­—
+        2ã€å®šä¹‰å¥½ç”¨æˆ·å…³é”®å­—åï¼Œè¯¥æµ‹è¯•å¥—ä»¶é‡Œé¢å°±å¯ä»¥ä½¿ç”¨è¯¥ç”¨æˆ·å…³é”®å­—äº†ï¼Œå°±åƒä½¿ç”¨åº“å…³é”®å­—ä¸€æ ·
+t2.robotæ–‡ä»¶
 ```robotframework
 *** Settings ***
 Library    SeleniumLibrary
@@ -49,7 +49,7 @@ Library    Collections
 
 *** Keywords ***
 LoginWebsite
-#    Arguments¿ªÍ·Ö¸¶¨²ÎÊı
+#    Argumentså¼€å¤´æŒ‡å®šå‚æ•°
     [Arguments]      ${username}     ${password}
 
     Open Browser   http://localhost/mgr/login/login.html    chrome
@@ -61,7 +61,7 @@ LoginWebsite
     click element   tag=button
 
 AddCourse
-#    Arguments¿ªÍ·Ö¸¶¨²ÎÊı
+#    Argumentså¼€å¤´æŒ‡å®šå‚æ•°
     [Arguments]       ${coursename}     ${coursedesc}     ${displayidx}
 
     click element   css=button[ng-click="showAddOne=true"]
@@ -70,7 +70,7 @@ AddCourse
     input text      css=input[ng-model="addData.display_idx"]   ${displayidx}
     click element   css=button[ng-click="addOne()"]
 
-#    ·ÀÖ¹¶ş´ÎäÖÈ¾Ìí¼ÓµÈ´ıÊ±¼ä
+#    é˜²æ­¢äºŒæ¬¡æ¸²æŸ“æ·»åŠ ç­‰å¾…æ—¶é—´
     sleep   1
 
 GetLessonsList
@@ -81,47 +81,45 @@ GetLessonsList
        \   log to console    ${ele.text}
        \   Append To List   ${courses}   ${ele.text}
 
-#       ¼Ç×¡ÒªÌí¼Ó·µ»ØĞÅÏ¢
+#       è®°ä½è¦æ·»åŠ è¿”å›ä¿¡æ¯
     [Return]   ${courses}
-
 ```
-×ÊÔ´ÎÄ¼ş
+èµ„æºæ–‡ä»¶
 
-    *ÔÚ²âÊÔÌ×¼şÎÄ¼şÖĞ¶¨Òå¹Ø¼ü×ÖµÄÎÊÌâ
-        -->Ö»ÄÜÔÚ±¾²âÊÔÌ×¼şÖĞÓĞĞ§£¬ÎŞ·¨¹²Ïí¸øÆäËü²âÊÔÌ×¼şÊ¹ÓÃ
+    *åœ¨æµ‹è¯•å¥—ä»¶æ–‡ä»¶ä¸­å®šä¹‰å…³é”®å­—çš„é—®é¢˜
+        -->åªèƒ½åœ¨æœ¬æµ‹è¯•å¥—ä»¶ä¸­æœ‰æ•ˆï¼Œæ— æ³•å…±äº«ç»™å…¶å®ƒæµ‹è¯•å¥—ä»¶ä½¿ç”¨
         
-    *Ê¹ÓÃ×ÊÔ´ÎÄ¼ş(Resource)
-    *×ÊÔ´ÎÄ¼şÆäÊµ¾ÍÊÇRF²ãÃæµÄ¿âÎÄ¼ş
-        -->ÀïÃæ¿ÉÒÔ°üº¬ÓÃÀ´¹²ÏíµÄ±äÁ¿ºÍ¹Ø¼ü×Ö
-        -->×ÊÔ´ÎÄ¼şµÄ¸ñÊ½»ù±¾Ò²ºÍ²âÊÔÌ×¼şÎÄ¼şÀàËÆ
+    *ä½¿ç”¨èµ„æºæ–‡ä»¶(Resource)
+    *èµ„æºæ–‡ä»¶å…¶å®å°±æ˜¯RFå±‚é¢çš„åº“æ–‡ä»¶
+        -->é‡Œé¢å¯ä»¥åŒ…å«ç”¨æ¥å…±äº«çš„å˜é‡å’Œå…³é”®å­—
+        -->èµ„æºæ–‡ä»¶çš„æ ¼å¼åŸºæœ¬ä¹Ÿå’Œæµ‹è¯•å¥—ä»¶æ–‡ä»¶ç±»ä¼¼
         
-    *ËÑË÷¹æÔò
-        -->Ê×ÏÈÏà¶ÔËÑË÷µ±Ç°ÎÄ¼şµÄÄ¿Â¼Æ¥ÅäËÑË÷
-        -->Èç¹ûÕÒ²»µ½£¬¾ÍÔÚpythonµÄÄ£¿éËÑË÷Â·¾¶ÖĞËÑË÷
-t1.robotÎÄ¼ş
-
+    *æœç´¢è§„åˆ™
+        -->é¦–å…ˆç›¸å¯¹æœç´¢å½“å‰æ–‡ä»¶çš„ç›®å½•åŒ¹é…æœç´¢
+        -->å¦‚æœæ‰¾ä¸åˆ°ï¼Œå°±åœ¨pythonçš„æ¨¡å—æœç´¢è·¯å¾„ä¸­æœç´¢
+t1.robotæ–‡ä»¶
 ```robotframework
 *** Settings ***
 Library           SeleniumLibrary
 Library           Collections
 Library           st
-#¼ÓÈë×ÊÔ´ÎÄ¼şµÄÊ±ºòĞèÒªÌí¼ÓÀ©Õ¹Ãû(¿ÉÓÃÏà¶ÔÂ·¾¶£¬Ò²¿ÉÓÃ¾ø¶ÔÂ·¾¶)
+#åŠ å…¥èµ„æºæ–‡ä»¶çš„æ—¶å€™éœ€è¦æ·»åŠ æ‰©å±•å(å¯ç”¨ç›¸å¯¹è·¯å¾„ï¼Œä¹Ÿå¯ç”¨ç»å¯¹è·¯å¾„)
 Resource          t2.robot
 
 *** Test Cases ***
 test_one
     [Setup]    deleteAllCourse
     LoginWebsite    auto    sdfsdfsdf
-    AddCourse    ´óÑ§¼ÆËã»ú    ´óÑ§¼ÆËã»ú¿Î³ÌÃèÊö    2
+    AddCourse    å¤§å­¦è®¡ç®—æœº    å¤§å­¦è®¡ç®—æœºè¯¾ç¨‹æè¿°    2
     ${courses}=    GetLessonsList
-    Should Be True    $courses==[u'´óÑ§¼ÆËã»ú']
+    Should Be True    $courses==[u'å¤§å­¦è®¡ç®—æœº']
     Close Browser
     [Teardown]    deleteAllCourse
 
 test_two
     [Setup]    deleteAllCourse
     LoginWebsite    auto    sdfsdfsdf
-    AddCourse    javascript    javascript¿Î³ÌÃèÊö    1
+    AddCourse    javascript    javascriptè¯¾ç¨‹æè¿°    1
     ${courses}=    GetLessonsList
     Should Be True    $courses==[u'javascript']
     Close Browser
