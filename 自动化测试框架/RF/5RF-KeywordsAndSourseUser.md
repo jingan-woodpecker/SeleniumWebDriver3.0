@@ -34,6 +34,26 @@ def deleteAllCourse():
     driver.quit()
 ```
 
+上面的初始化清除也可以做成robotframework的关键字
+```robotframework
+*** Keywords ***
+DeleteAllCourse
+    LoginWebsite
+    Set Selenium Implicit Wait 2
+    
+    :FOR  ${one}  IN RANGE    99999
+    \     ${deleteButtons}=   Get Element   css=button[ng-click="delOne(one)
+    \     exit for loop if    ${deleteButtons}==[][]
+    \     click element       @{deleteButtons}[0]   
+    \     click element       css=button.bn-primary
+    \     sleep   1
+    
+    Set Selenium Implicit Wait 10 
+    
+    close browser 
+
+```
+
 用户关键字
 
     通常的从测试库(python文件)里面提供的关键字叫：库关键字
@@ -83,6 +103,8 @@ GetLessonsList
 
 #       记住要添加返回信息
     [Return]   ${courses}
+    
+
 ```
 资源文件
 
@@ -108,6 +130,7 @@ Resource          t2.robot
 
 *** Test Cases ***
 test_one
+#    deleteAllCourse写在[Setup][Teardown]中即使用例中有错误，也会执行初始化清除操作
     [Setup]    deleteAllCourse
     LoginWebsite    auto    sdfsdfsdf
     AddCourse    大学计算机    大学计算机课程描述    2
