@@ -22,7 +22,6 @@ Testcase:
   
 st.python文件
 ```python
-
 from selenium import webdriver
 import time
 
