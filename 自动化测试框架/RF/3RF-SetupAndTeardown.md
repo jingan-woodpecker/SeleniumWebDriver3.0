@@ -4,8 +4,8 @@
         *条件表达式参数给python的eval函数
         *run keyword if   '2018' in $html    log to console 内容---->‘2018’ in $html成立就执行后面的语句
 
+mylib.py文件
 ```python
-# mylib文件
 import  requests
 
 def getWebInfo():
