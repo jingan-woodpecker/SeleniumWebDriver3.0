@@ -3,10 +3,9 @@
     *RF用FOR来实现循环
         > 遍历List变量
         > IN RANGE的用法 
-        
+
+mylib.py文件        
 ```python
-   
-# mylib文件
 def returnlist():
     return [1,2,3]
     
@@ -18,7 +17,6 @@ def returndict():
 ``` 
 
 ```robotframework
-
 *** Settings ***
 Library    mylib
 
