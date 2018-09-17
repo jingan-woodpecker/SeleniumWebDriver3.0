@@ -203,4 +203,5 @@ linux基本原则
     4、把命令cat执行看到的结果存放到cat.txt中
     5、创建一个文件test.txt,修改其权限为所有者可读可写，其他人没有任何权限
     6、创建一个叫xiaohua用户，然后创建一个新的用户组meinv,并将xiaohua用户添加到这个用户组中，然后创建一个新的文件，名字叫123.py,并修改它的用户组为meinv
-    
+   
+常用命令大全：https://www.cnblogs.com/fnlingnzb-learner/p/5831284.html 
