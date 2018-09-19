@@ -65,5 +65,10 @@
 ![](../picture/xftp01.png) 
 
 ![](../picture/xftp02.png) 
+
+
+5、添加硬盘
+
+
     
     
