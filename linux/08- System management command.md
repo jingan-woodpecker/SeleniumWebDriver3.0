@@ -68,7 +68,8 @@ tar 解压或者压缩(z:表示压缩格式，c：压缩的意思，v:显示压�
 
 ![tar](../picture/tar.png)    
 
-    解压包的命令(x:表示解压) tar -zxvf x.tar.gz
+    解压包的命令(x:表示解压) 
+    [root@localhost home]# tar -zxvf x.tar.gz
     
 ![tarx](../picture/tarx.png)
 
