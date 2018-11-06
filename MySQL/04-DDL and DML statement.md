@@ -10,7 +10,7 @@ DDL语句的操作
 注意：一定要加where条件，否则默认全部删除
     
     * 删除
-    delete 表名 where条件
+    delete from 表名 where条件
     
 ![ddl](../picture/ddl1.png)   
 
