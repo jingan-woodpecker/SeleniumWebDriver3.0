@@ -40,4 +40,4 @@
     
     执行顺序：from--where--group by--having--select--orderby    
     
-![过滤](../picture/def4.png)
+![过滤](../picture/def4.png) 
