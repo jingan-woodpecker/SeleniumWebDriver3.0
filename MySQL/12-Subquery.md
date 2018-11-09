@@ -30,4 +30,11 @@
 问题引入：
     
 ![子查询](../picture/key20.png)
+
+![子查询](../picture/key21.png)
+
+
+练习：
+
+    https://blog.csdn.net/CSDN_GIA/article/details/72356950
     
