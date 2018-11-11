@@ -58,6 +58,25 @@ RF中的变量
 
 mylib.py文件
 ```python
+def printarg(*args,**kwargs):
+    if len(args) == 0:
+        print(" no----args")
+    else:
+        print("----args are-----")
+        print("-----------------")
+        for one in args:
+            print(repr(one))
+        print("=============")
+
+    if len(kwargs) == 0:
+        print(" no---kwargs")
+    else:
+        print("----kwargs are----")
+        print("-------------------")
+        for k,v in kwargs.items():
+            print(repr(k)+":"+repr(v))
+        print("--------------------")
+
 def returnlist():
     return [1,2,3]
     
