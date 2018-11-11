@@ -7,15 +7,13 @@
     Library mylib1
     Library mylib2
     Library mylib3
-    
-2、printarg用法
-
-    >>>>可接收多个可变参数
-    ${var2}=     convert to integer   22
-    printarg     ${var2}   hello
-    
-    上面就是接收了数值22和字符串hello,可在log中查看
-    
-3、导入库提供参数相当于类的初始化(__init__)参数
+   
+2、导入库提供参数相当于类的初始化(__init__)参数
 
     例如： Library    SeleniumLibrary     implicit_wait=10     5 
+    
+3、在robot.bat中添加如下python路径语句后，rf测试用例也可以在这个命令窗口打开执行
+
+    @echo off
+    d:\tools\python36\python.exe -m robot.run %*
+    
