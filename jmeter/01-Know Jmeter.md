@@ -88,5 +88,12 @@ https://www.cnblogs.com/xingfan/p/7250559.html
     * jmeter支持的协议相对较少
     * 图形报表生成较复杂
     * LR中可以支持c语言脚本，来实现功能测试
+    
+7、jmeter插件的安装
+
+    * 下载jar包，然后放到jmeter的lib/ext目录下
+    * 重启jmeter
+    * 菜单选项[选项]下会出现plugins manager
+    * 以后就可以使用它来安装插件了     
       
     
