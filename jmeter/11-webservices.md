@@ -31,3 +31,5 @@
     * XPath query:写入路径其中*代表在任意标签中查找 "local-name="后面接的就是tagname，这样就可以获取到值
     * 添加debug sample拿到result
     * 如果接口之间存在关联就需替换请求参数 
+
+![jmeter](../picture/jmeter43.png)
