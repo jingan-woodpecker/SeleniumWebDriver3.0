@@ -18,7 +18,7 @@ FTP上传下载
     * 根据接口文档建立请求,运行
     * 可在保存文件的路径查看结果
     
-![jmeter](../picture/ftp.png)
+![jmeter](../picture/ftp.png) 
     
     
     
