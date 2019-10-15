@@ -1,4 +1,4 @@
-虚拟机安装linux系统
+一、VMware安装简化版的linux系统
 
     1、安装VMware workstation并创建虚拟机，操作步骤如下
 ![linux](../picture/linux01.png)
@@ -20,5 +20,23 @@
 ![linux](../picture/linux08.png)
 
     初次登录只有root登录，密码输入时在屏幕中不显示
+
+二、VMware安装完整版的linux系统
+
+注意此处的勾选，且下图中选择的是简化版minimal，我们需要下载一个完整版的
+
+![linux](../picture/VM1.png)
+
+![linux](../picture/VM2.png)
+
+![linux](../picture/VM3.png)
+
+三、VMware安装以及CentOs镜像下载参考文档
+
+[参考文档](https://blog.csdn.net/weixin_40067052/article/details/79346698)
+
+
+
+
 
 
