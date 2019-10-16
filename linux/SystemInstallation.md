@@ -1,5 +1,7 @@
 一、VMware安装简化版的linux系统
 
+[CentOs镜像下载地址](https://opsx.alibaba.com/mirror)
+
     1、安装VMware workstation并创建虚拟机，操作步骤如下
 ![linux](../picture/linux01.png)
 
