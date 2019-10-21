@@ -27,7 +27,7 @@ linux基本原则
             d: 目录文件
             b: 块(字节)设备文件(block)----光驱、硬盘
             c: 字符(键盘、显示器)设备文件(character)
-            l: 符号链接文件(symbolic link file)
+            l: 符号链接文件(symbolic link file) —— 相当于windows中桌面的快捷方式就是链接文件
             p: 命令管道文件(pipe)
             s: 套接字文件(socket)
           
@@ -66,7 +66,8 @@ linux基本原则
 
     内置命令(shell内置), 内部，内建
     外部命令：在文件系统的某个目录下有一个与命令名称相应的可执行文件 
-    例如： type cd    或   type echo
+    例如：输入 type cd    或   type echo
+    结果返回：cd is a shell builtin  就是内置命令
     
     help cd 命令： 查看内置命令的使用方法
     date --help 或  man date  命令： 查看外部命令的使用方法 
