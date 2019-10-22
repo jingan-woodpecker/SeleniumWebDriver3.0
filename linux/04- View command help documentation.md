@@ -85,7 +85,7 @@ linux基本原则
         N: 前一个
         q: 退出
         
-    硬件时间一直在进行，系统时间可以关闭
+    硬件时间一直在进行，系统时间电脑关闭了即表示已经关闭
     同步时间命令： hwclock -s(同步硬件时间) hwclock -w(同步系统时间)
         
 简单练习
@@ -106,11 +106,12 @@ linux基本原则
             块设备:随机访问、数据块
             字符设备：线性访问，按字符为单位
             设备号： 主设备号(major)和次设备号(minor)
-    /etc: 配置文件
-          (网卡配置vim /etc/sysconfig/network-scripts/ifcfg-eth0，操作系统环境变量配置vim /etc/profile)
+    /etc: 配置文件（重点）
+          (例如：网卡配置vim /etc/sysconfig/network-scripts/ifcfg-ens33
+                操作系统环境变量配置vim /etc/profile)
           
-    /home: 用户的家目录，每一个用户的家目录通常默认为/home/USERNAME
-    /root: 管理员的家目录
+    /home: 用户的家目录，每一个用户的家目录通常默认为/home/USERNAME （重点）
+    /root: 管理员的家目录（重点）
     /lib: 库文件
           静态库, .a
           动态库, dll, so(shared object)
@@ -133,7 +134,7 @@ linux基本原则
     /tmp: 临时文件， /var/tmp (若是磁盘满了，关机后会首先清除此文件中的内容)
     /var: 可变化的文件
     /usr: 安装第三方软件包
-    /bin: 可执行文件，用户命令(whereis cp 查看cp命令的可执行文件)
+    /bin: 可执行文件，用户命令(whereis cp 查看cp命令的可执行文件)（重点）
     /sbin: 管理命令
     
 路径
