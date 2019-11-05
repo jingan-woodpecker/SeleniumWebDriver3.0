@@ -30,6 +30,9 @@
 删除用户
 
     userdel  
+    不添加 -r 只能删除/etc/passwd/下的用户，但是使用ls命令查看还是能看到用户主目录
+    如果已经删除了用户，还存在用户主目录可以使用 rm -rf /home/username 进行删除
+
 
 ![userdel](../picture/userdel.png)  
 
