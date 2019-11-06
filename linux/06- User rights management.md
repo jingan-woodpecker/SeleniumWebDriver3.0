@@ -105,7 +105,8 @@
     
     用二进制表示权限 
     
-    对整个x目录中的文件添加写权限(因为x目录在home中)[root@localhost x]# chomd -R o+w x/
+    对整个x目录中的文件添加写权限(如果x目录在home目录下则需要进入到x目录修改，在当前目录直接输入"."表示即可)[root@localhost x]# chomd -R o+w .
+    chown和chmod是差不多的，一个是修改拥有者，一个是修改权限，
 
 在root用户下修改文件的拥有者（本来拥有者是：root，改为jingan）
 
