@@ -106,4 +106,8 @@
     用二进制表示权限 
     
     对整个x目录中的文件添加写权限(因为x目录在home中)[root@localhost x]# chomd -R o+w x/
+
+在root用户下修改文件的拥有者（本来拥有者是：root，改为jingan）
+
+		输入：chown jingan:jingan 1.txt (jingan组下的jingan这个用户)
     
