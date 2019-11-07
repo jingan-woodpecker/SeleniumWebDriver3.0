@@ -38,6 +38,7 @@ top命令
     reboot、 shutdown、 init0
     
 检查磁盘空间： df
+
     只显示/dev/sda1表示磁盘分为一个区；若显示/dev/sda1、/dev/sda2 则表示磁盘分为两个区
     查看Mounted on列表：了解是挂载在哪里
 
@@ -49,15 +50,21 @@ top命令
      -t                          显示各指定文件系统的磁盘空间使用情况
      -T                          显示文件系统
      
-如何进行分区
-	根据你的磁盘空间大小进行分区,如果磁盘小于3T,则使用fdisk命令分区,虚拟机只能创建新的虚拟机磁盘
+   如何进行分区
+	 根据你的磁盘空间大小进行分区,如果磁盘小于3T,则使用fdisk命令分区,虚拟机只能创建新的虚拟机磁盘
 查看或配置网卡信息
 
-    ifconfig
+检查目录所占磁盘空间：du 
+
+		该命令与df执行结果相似，du更侧重磁盘的使用情况
+
+    ifconfig   （一个网卡下可以有很多的网络接口）
     
 ![ifconfig](../picture/ifconfig.png)
     
-    重启整台机器网络的命令： service network restart
+    重启整台机器网络的命令： service network restart （因为可能你只是使用其中的某个网络接口，而其它人在用其它的网络接口，所以全部重启有时会造成问题）
+    重启网络接口：ifconfig ens33 up
+		关闭网络接口：ifconfig ens33 down
    
 测试远程主机连通性
 
@@ -66,9 +73,9 @@ top命令
     
 查看网络情况
 
-    netstat-ntpt
+    netstat-ntpl （可以查看监听的ip地址和端口进程号、进程名称）
     
-tar 解压或者压缩(z:表示压缩格式，c：压缩的意思，v:显示压缩的时候的详细情况)
+tar 解压或者压缩(z:表示压缩格式（后缀为gz的压缩格式），c：压缩的意思，v:显示压缩的时候的详细情况)
 
     例如：将"x"目录压缩成名称为"x.tar.gz" 且格式为"gz"的压缩包，命令如下
     [root@localhost home]# tar -zcvf x.tar.gz x/
@@ -81,3 +88,4 @@ tar 解压或者压缩(z:表示压缩格式，c：压缩的意思，v:显示压�
 ![tarx](../picture/tarx.png)
 
     
+init6 热重启（还有电源未关闭的状态），安装了新的硬件不会识别，需要冷启动init0
