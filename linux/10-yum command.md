@@ -6,7 +6,14 @@
     d、解决了rpm的依赖
     需要一个yum源(大量的rpm库)
     
+		外网查询是否安装某个软件：yum search mysql-server
+    未安装前查询软件的信息：yum info mysql-server
+
 安装/卸载 yum install/remove ~
+
+		Centos7下解决mysql-server没有可用包链接：https://blog.csdn.net/arvin_sc/article/details/82948802
+
+		安装tree或者man：yum install tree/man
 
 ![yum](../picture/yum1.png)
 
