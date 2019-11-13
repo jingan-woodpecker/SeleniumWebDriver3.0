@@ -9,6 +9,7 @@
 		外网查询是否安装某个软件：yum search mysql-server
     未安装前查询软件的信息：yum info mysql-server
 
+
 安装/卸载 yum install/remove ~
 
 		Centos7下解决mysql-server没有可用包链接：https://blog.csdn.net/arvin_sc/article/details/82948802
@@ -26,6 +27,10 @@
 
 ![yum](../picture/yum.png)
 
+
+为什么默认的yum源就是在外网上，由什么决定的
+
+		由yum的配置文件决定的
     
 yum源的配置文件路径
 
